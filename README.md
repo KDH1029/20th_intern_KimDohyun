@@ -25,8 +25,8 @@
 
     ROS2
         day1
-            hw1 X
-            hw2 X
+            hw1 O
+            hw2 O
             hw3 X
         day2
             hw1 X
