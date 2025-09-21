@@ -3,8 +3,6 @@
 
 #include <QMainWindow>
 #include <QUdpSocket>
-#include <QLabel>
-#include <QHostAddress>
 #include <opencv2/opencv.hpp>
 
 QT_BEGIN_NAMESPACE

@@ -44,8 +44,9 @@ void MainWindow::get_udp()
 void MainWindow::on_pushButton_clicked()
 {
     cv::Mat img = cv::imread("balloon.png");
+    cv::inRange(img, cv::Scalar(100, 100, 100), cv::Scalar(255, 255, 255), img);
     std::vector<uchar> buf;
     cv::imencode(".png", img, buf);
     QByteArray datagram(reinterpret_cast<const char *>(buf.data()), static_cast<int>(buf.size()));
-    udpSocket->writeDatagram(datagram, QHostAddress(ui->lineEdit->text()), 8888);
+    udpSocket->writeDatagram(datagram, QHostAddress("127.0.0.1"), 8888);
 }

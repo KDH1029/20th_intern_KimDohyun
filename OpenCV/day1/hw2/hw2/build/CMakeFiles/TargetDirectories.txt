@@ -1,0 +1,3 @@
+/home/dh/Documents/20th_intern_KimDohyun/OpenCV/day1/hw2/hw2/build/CMakeFiles/hw2.dir
+/home/dh/Documents/20th_intern_KimDohyun/OpenCV/day1/hw2/hw2/build/CMakeFiles/edit_cache.dir
+/home/dh/Documents/20th_intern_KimDohyun/OpenCV/day1/hw2/hw2/build/CMakeFiles/rebuild_cache.dir
