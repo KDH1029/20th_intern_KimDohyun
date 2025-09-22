@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1440</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="imageOriginal">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>10</y>
+      <width>280</width>
+      <height>280</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QSlider" name="sliderHH">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>730</y>
+      <width>160</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="maximum">
+     <number>179</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="sliderHL">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>780</y>
+      <width>160</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>179</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="sliderSH">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>730</y>
+      <width>160</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="sliderSL">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>780</y>
+      <width>160</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="sliderVH">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>730</y>
+      <width>160</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="sliderVL">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>780</y>
+      <width>160</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>255</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hue">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>670</y>
+      <width>129</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hue</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="saturation">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>670</y>
+      <width>161</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Saturation</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="value">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>670</y>
+      <width>161</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Value</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="low">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>780</y>
+      <width>129</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Low</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="high">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>730</y>
+      <width>129</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>High</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="valHL">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>780</y>
+      <width>129</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="valHH">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>730</y>
+      <width>129</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="valSH">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>730</y>
+      <width>129</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="valSL">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>780</y>
+      <width>129</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="valVH">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>730</y>
+      <width>129</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="valVL">
+    <property name="geometry">
+     <rect>
+      <x>1050</x>
+      <y>780</y>
+      <width>129</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioWhite">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>660</y>
+      <width>212</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>White_line</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioBlue">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>700</y>
+      <width>212</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Blue_line</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioNeon">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>740</y>
+      <width>212</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Neon_cone</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioOrange">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>780</y>
+      <width>221</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Orange_cone</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="neon">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>730</y>
+      <width>129</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>neon</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="orange">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>770</y>
+      <width>129</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>orange</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="orangeY">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>770</y>
+      <width>129</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>middle</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="neonY">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>730</y>
+      <width>129</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>middle</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="neonX">
+    <property name="geometry">
+     <rect>
+      <x>1320</x>
+      <y>730</y>
+      <width>129</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>middle</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="orangeX">
+    <property name="geometry">
+     <rect>
+      <x>1320</x>
+      <y>770</y>
+      <width>129</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>middle</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imageWhite">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>330</y>
+      <width>280</width>
+      <height>280</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imageBlue">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>330</y>
+      <width>280</width>
+      <height>280</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imageObj">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>10</y>
+      <width>280</width>
+      <height>280</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imageOrange">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>330</y>
+      <width>280</width>
+      <height>280</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="imageNeon">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>10</y>
+      <width>280</width>
+      <height>280</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="usb_cam">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>290</y>
+      <width>129</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Usb_Cam</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="white_line">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>610</y>
+      <width>151</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>White_line</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="blue_line">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>610</y>
+      <width>129</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Blue_line</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="find_object">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>293</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>find_object</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="neon_cone">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>290</y>
+      <width>151</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Neon_cone</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="orange_cone">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>610</y>
+      <width>181</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Orange_cone</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1440</width>
+     <height>39</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
